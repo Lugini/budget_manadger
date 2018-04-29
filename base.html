@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Budget manager</title>
+</head>
+<body>
+
+</body>
+</html>{% load staticfiles %}
+<html>
+    <head>
+        <title>Budget manager</title>
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="">Budget manager</a></h1>
+        </div>
+
+        <div>
+             <a class="btn btn-default" href=""><span class="action" id="plus">+</span></a>
+        </div>
+        <div>
+             <a class="btn btn-default" href=""><span class="action" id="minus">-</span></a>
+        </div>
+
+        <table class="content container">
+            <tr>
+                {% for post in posts %}
+                <tc>
+                    <div class="action">
+                        <p class="action">   {{ post.published_date }} </p>
+                    </div>
+                </tc>
+                <tc>
+                    <p class="sum"><a>{{ post.title }}</a></p>
+                </tc>
+                {% endfor %}
+            </tr>
+        </table>
+    </body>
+</html>
