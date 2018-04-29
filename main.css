@@ -1,0 +1,62 @@
+.page-header {
+    background-color: #1DE9B6;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+p, h1 {
+    font-family: 'Gugi', cursive;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.action {
+    font-size: 60px;
+    font-family: 'Gugi', cursive;
+}
+
+#plus, #plus:visited{
+    color: #1B5E20;
+    text-decoration:none;
+}
+
+#minus, #minus:visited {
+    color: #DD2C00;
+    text-decoration:none;
+}
+
+table {
+    border: solid 1px #000000;
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr {
+    margin: 5pt;
+}
+
+p .action {
+    font-size: 18pt;
+    @if p.text
+}
+
+.sum {
+    color: #424242;
+    fonr-size: 18pt;
+}
