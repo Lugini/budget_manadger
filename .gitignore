@@ -1,0 +1,3 @@
+budgetvenv/*
+.idea/*
+db.sqlite3
